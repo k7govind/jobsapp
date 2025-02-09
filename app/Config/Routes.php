@@ -10,4 +10,5 @@ $routes->get('/contact', 'PagesController::index');
 $routes->get('/', 'Home::index');
 
 $routes->get('/jobslisting', 'JobsController::index');
+$routes->get('/login','LoginController::index');
 
