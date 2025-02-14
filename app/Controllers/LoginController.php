@@ -12,4 +12,9 @@ class LoginController extends Controller
         return view('templates/header').view('user_login').view('templates/footer');
     }
 
+    public function login() 
+    {
+        
+    }
+
 }

@@ -1,7 +1,7 @@
 <main>
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center min-vh-100">
-                <div class="col-md-5 col-sm-12 col-lg-5 col-xs-12">
+                <div class="col-md-5 col-sm-12 col-lg-5 col-xs-12 border border-primary rounded-end my-5">
                     <div class="p-5 bg-white rounded-3">
                         <div class="text-center">
                             <h5 class="text-dark mb-4">Welcome Back!</h5>
@@ -11,7 +11,7 @@
                         </div>
                         <form action="<?php echo base_url('/login'); ?>" method="post" class="user" id="loginForm">
                             <div class="form-group m-3">
-                                <input class="form-control" type="tel" id="userInputPhone" aria-describedby="phoneHelp" placeholder="Enter Phone Number..." name="phoneno" pattern="[0-9]{10}" required value="<?php echo set_value('phoneno');?>">
+                                <input class="form-control" type="email" id="userInputEmail" aria-describedby="emailHelp" placeholder="Enter your Email..." name="email" required value="<?php echo set_value('email');?>">
                             </div>
                             <div class="form-group m-3">
                                 <input class="form-control single-input" type="password" id="userInputPassword" placeholder="Password" name="password" required>
