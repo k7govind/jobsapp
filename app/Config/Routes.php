@@ -5,12 +5,21 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/about', 'PagesController::index');
+service('auth')->routes($routes);
+
+ $routes->get('/about', 'PagesController::index');
 $routes->get('/contact', 'PagesController::index');
 $routes->get('/', 'Home::index');
 
 $routes->get('/jobslisting', 'JobsController::index');
-$routes->get('/login','LoginController::index');
 
-service('auth')->routes($routes);
+//Login Handling
+$routes->get('/login','LoginController::index');
+$routes->post('/login','LoginController::login');
+
+//Register Handling
+$routes->get('/register','RegisterController::index');
+$routes->post('/register','RegisterController::post');
+
+
 
