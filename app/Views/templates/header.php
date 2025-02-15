@@ -71,7 +71,7 @@
                                 </div>          
                                 <!-- Header-btn -->
                                 <div class="header-btn d-none f-right d-lg-block">
-                                    <a href="#" class="btn head-btn1">Register</a>
+                                    <a href="<?= site_url('register');?>" class="btn head-btn1">Register</a>
                                     <a href="<?= base_url('login');?>" class="btn head-btn2">Login</a>
                                 </div>
                             </div>
