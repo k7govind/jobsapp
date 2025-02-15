@@ -22,6 +22,7 @@
             <link rel="stylesheet" href="assets/css/slicknav.css">
             <link rel="stylesheet" href="assets/css/style.css">
             <link rel="stylesheet" href="assets/css/themify-icons.css">
+            <link rel="stylesheet" href="assets/css/newstyle.css">
    </head>
    <body>
     <!-- Preloader Start -->

@@ -109,7 +109,10 @@ class AuthGroups extends ShieldAuthGroups
             'users.edit',
             'beta.access',
         ],
-        'user' => [],
+        'user' => [
+            'users.create',
+            'users.edit',
+        ],
         'beta' => [
             'beta.access',
         ],
