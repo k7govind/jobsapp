@@ -19,11 +19,11 @@ class RegisterController extends BaseController
 
         // Validation Rules
         $rules = [
-            'fullname'    => 'required|min_length[5]',
-            'emailid'       => 'required|valid_email|is_unique[users.email]',
-            'password'    => 'required|min_length[6]',
+            'fullname'    => 'required|min_length[5]|alpha_space|max_length[200]',
+            'emailid'       => 'required|valid_email|max_length[150]|is_unique[users.email]',
+            'password'    => 'required|min_length[6]|max_length[50]',
             'phoneno' => 'required|numeric|min_length[10]',
-            'experience' => 'required',
+            'experience' => 'permit_empty',
         ];
 
         if (!$this->validate($rules)) {
